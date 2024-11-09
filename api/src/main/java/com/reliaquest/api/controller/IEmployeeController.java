@@ -1,6 +1,7 @@
 package com.reliaquest.api.controller;
 
 import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -41,3 +42,4 @@ public interface IEmployeeController<Entity, Input> {
     @DeleteMapping("/{id}")
     ResponseEntity<String> deleteEmployeeById(@PathVariable String id);
 }
+
